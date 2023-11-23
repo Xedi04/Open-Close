@@ -1,3 +1,4 @@
+// 1:
 let radio1 = document.createElement("input");
 let radio2 = document.createElement("input");
 let radio3 = document.createElement("input");
@@ -11,15 +12,10 @@ radio1.setAttribute('type', 'radio');
 radio2.setAttribute('type', 'radio');
 radio3.setAttribute('type', 'radio');
 
-document.body.append(Div);
 
-Div.style.backgroundColor = "yellow";
-Div.style.width = "800px";
-Div.style.height = "200px";
+Div.style.cssText="width:600px; height:200px; background-color:yellow";
+Btn.style.cssText="width:100px; height:30px; background-color:skyblue";
 
-Btn.style.width = "100px"
-Btn.style.height = "30px"
-Btn.style.backgroundColor = "blue"
 
 radio1.value = "Yaslilar ucun"
 radio2.value = "Boyukler ucun"
@@ -34,7 +30,10 @@ radio1.setAttribute('name', 'bir')
 radio2.setAttribute('name', 'bir')
 radio3.setAttribute('name', 'bir')
 
+
+document.body.append(Div);
 Div.append(span1, radio1, span2, radio2, span3, radio3, Btn)
+
 
 Btn.innerText = "Add";
 Btn.addEventListener("click", () => {
@@ -43,6 +42,9 @@ Btn.addEventListener("click", () => {
     console.log(check.value);
 
 })
+
+
+// 2:
 
 let Divall = document.createElement("div");
 let div1 = document.createElement("div");
